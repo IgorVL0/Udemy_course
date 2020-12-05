@@ -1,16 +1,11 @@
-# Entrada de dado
-#print("Qual seu nome?")
-#nome = input()
-nome = input("Qual o seu nome? ")
+any = True
+i = 0
 
-# Saida
-#print("Seja bem-vindo(a) %s" % nome)
-print(f'Seja bem vindo(a) {nome}')
+while any:
+    i += 1
+    if i == 5:
+        any = False
+    else:
+        print(f'{i} não é igual a 5 ainda')
 
-#print("Qual a sua idade?")
-#idade = input()
-idade = input("Qual sua idade? ")
-
-#print("O(A) %s tem %s anos" % (nome, idade))
-print(f'O(A) {nome} tem {idade} anos')
-print(f"O {nome} nasceu em {2020-int(idade)}")
+print(i)
